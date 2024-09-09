@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Book Recommendations</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Adjust path as necessary -->
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Mood</h1>
+        <div class="mood-selection">
+            <button class="mood-button" data-mood="Happy">Happy</button>
+            <button class="mood-button" data-mood="Empowered">Empowered</button>
+            <button class="mood-button" data-mood="Nostalgic">Nostalgic</button>
+            <button class="mood-button" data-mood="Relaxed">Relaxed</button>
+            <button class="mood-button" data-mood="Motivated">Motivated</button>
+            <button class="mood-button" data-mood="Surprised">Surprised</button>
+            <button class="mood-button" data-mood="Adventurous">Adventurous</button>
+            <button class="mood-button" data-mood="Romantic">Romantic</button>
+           
+            <!-- Add more moods as necessary -->
+        </div>
+        <div id="recommendation-list" class="recommendation-list">
+            <!-- Recommendations based on mood will be dynamically inserted here -->
+        </div>
+        <div id="loader" class="loader book" style="display: none;">
+            <figure class="page"></figure>
+            <figure class="page"></figure>
+            <figure class="page"></figure>
+        </div>
+        
+        <button class="go-back-button" onclick="goBack()">Go Back</button>
+    </div>
+    <script src="/static/mood_filter.js"></script> <!-- Ensure this file is correctly located in the static directory -->
+    <script>
+        // Include a simple function for the "Go Back" button
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

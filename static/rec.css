@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    font-family: 'Lora', serif;
+}
+
+/* Recommendation List */
+.recommendation-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Recommendation Item */
+.recommendation-item {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recommendation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Book Cover */
+.recommendation-item img.book-cover {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Book Title */
+.recommendation-item p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Lora', serif;
+}
+
+.recommendation-item p strong {
+    font-weight: 600;
+}
+
+/* Author and Rating */
+.recommendation-item p.author,
+.recommendation-item p.rating {
+    font-size: 16px;
+    color: #777;
+    font-family: 'Lora', serif;
+}
+
+/* Amazon Link */
+.recommendation-item a.amazon-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FF9900;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+.recommendation-item a.amazon-link:hover {
+    color: #CC7A00;
+    text-decoration: underline;
+}
+
+/* Back Button */
+.go-back-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.go-back-button:hover {
+    background-color: #333333;
+}
+
+/* Filter Button */
+.filter {
+    font-family: 'Lora', serif;
+    padding: 15px 30px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #303F9F, #1565C0);
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust vertical margin */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+.filter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Additional Button Styling */
+.button-container button {
+    width: 200px; /* Ensures buttons are the same width */
+    margin-bottom: 15px; /* Adds spacing between buttons */
+}

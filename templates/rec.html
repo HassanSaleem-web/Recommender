@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+    <link rel="stylesheet" href="/static/rec.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your Book Recommendations</h1>
+        <div id="recommendation-list" class="recommendation-list">
+            <!-- Recommendations will be dynamically inserted here -->
+        </div>
+        <div class="button-container">
+        <a href="/mood-filter" class="filter">Don't find these interesting? Try our mood filter!</a>
+        <button class="go-back-button" onclick="goBack()">Go Back</button>
+        
+    </div>
+    </div>
+    <script src="/static/recommendations.js"></script>
+</body>
+</html>

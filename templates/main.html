@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation UI</title>
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Find your next favorite book</h1>
+
+        <!-- Card Wrapper -->
+        <div class="card-wrapper">
+            <div class="input-section">
+                <div class="book-input">
+                    <div class="book-slot" ondragover="allowDrop(event)" ondrop="drop(event)">+</div>
+                    <div class="trash-icon">&#128465;</div>
+                </div>
+                <div class="book-input">
+                    <div class="book-slot" ondragover="allowDrop(event)" ondrop="drop(event)">+</div>
+                    <div class="trash-icon">&#128465;</div>
+                </div>
+                <div class="book-input">
+                    <div class="book-slot" ondragover="allowDrop(event)" ondrop="drop(event)">+</div>
+                    <div class="trash-icon">&#128465;</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common Themes Placeholder -->
+        <div id="common-themes" style="margin-top: 20px; font-style: italic; color: rgb(1, 6, 9);"></div>
+
+        <!-- Buttons -->
+        <button class="recommendation-button">Generate Recommendations</button>
+        <!-- Updated button with anchor tag -->
+        <a href="/mood-filter" class="filter">Or try out the Mood filter!</a>
+
+        <!-- File Upload Section for Goodreads Export -->
+   
+
+        <!-- Loader -->
+        <div id="loader" class="loader book" style="display: none;">
+            <figure class="page"></figure>
+            <figure class="page"></figure>
+            <figure class="page"></figure>
+        </div>
+
+        <!-- Recommendation Sections -->
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+        <input type="text" class="book-search" placeholder="Search for a book..." oninput="filterBooks(this)" />
+        <ul class="dropdown"></ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script>
+
+    <script src="/static/send.js"></script>
+
+</body>
+
+</html>
